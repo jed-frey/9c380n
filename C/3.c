@@ -1,5 +1,6 @@
 #include "3.h"
 #include <stdio.h>
+#include <string.h>
 
 void car_init(struct Car *car) {
 	strcpy(car->license_plate, "Unknown");
