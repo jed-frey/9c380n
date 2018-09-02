@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void car_init(struct Car *car) { strcpy(car->license_plate, "Unknown"); }
+void car_init2(struct Car *car, char *plate) { strcpy(car->license_plate, "Unknown"); }
 
 int main() {
   struct Car c1;
