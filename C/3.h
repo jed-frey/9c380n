@@ -3,7 +3,7 @@ struct Point {
 };
 
 struct Car {
-  char license_plate[10];
+  char license_plate[15];
 };
 
 void car_init(struct Car*);
