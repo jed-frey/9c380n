@@ -1,9 +1,11 @@
-#include "3.h"
 #include "4.h"
+#include "3.h"
 #include <stdio.h>
 #include <string.h>
 
-void car_init2(struct Car *car, char *plate) { strcpy(car->license_plate, plate); }
+void car_init2(struct Car *car, char *plate) {
+  strcpy(car->license_plate, plate);
+}
 
 int main() {
   struct Car c1;
