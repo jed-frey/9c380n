@@ -3,7 +3,7 @@ struct Point
    int x, y;
 };
 
-struct Point
+struct Car
 {
    int x, y;
 };
