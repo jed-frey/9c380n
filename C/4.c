@@ -1,4 +1,5 @@
 #include "3.h"
+#include "4.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -9,5 +10,8 @@ int main() {
   car_init(&c1);
   printf("Plate Number: %s\n", c1.license_plate);
 
+
+  car_init2(&c1, "foo");
+  printf("Plate Number: %s\n", c1.license_plate);
   return 0;
 }
