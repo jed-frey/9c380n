@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 void car_init(struct Car *car) {
-
+	car->license_plate="Unknown";
 }
 
 int main() {
   struct Car c1;
   car_init(&c1);
+
 
   return 0;
 }
