@@ -5,5 +5,5 @@ struct Point
 
 struct Car
 {
-   int x, y;
+   char license_plate[8];
 };
