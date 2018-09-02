@@ -1,6 +1,7 @@
 CC?=clang
 C_FLAGS+=-Wall
-BIN?=1
+BIN?=1.bin
+PPO?=1.pp # Pre processor out.
 
 .PHONY: all
 all:
@@ -8,4 +9,6 @@ all:
 
 ${BIN}: 1.c
 	${CC} ${C_FLAGS} -o ${@} ${^}
+
+${
 
