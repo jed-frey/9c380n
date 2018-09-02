@@ -1,5 +1,7 @@
 #!/usr/bin/env tcsh
 
+foreach C_SRC (1 2)
+
 foreach CLANG_VER ( 3.8 3.9 4.0 5.0 6.0 7 )
 setenv CC clang-${CLANG_VER}
 
