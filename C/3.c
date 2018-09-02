@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 void car_init(struct Car *car) {
-	car->license_plate="Unknown";
+	strcpy(car->license_plate, "Unknown");
 }
 
 int main() {
