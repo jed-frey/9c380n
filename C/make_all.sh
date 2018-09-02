@@ -1,16 +1,14 @@
 #!/usr/bin/env tcsh
 
 foreach CLANG_VER ( 3.8 3.9 4.0 5.0 6.0 7 )
-
-echo $CLANG_VER
-#command1
-#command2
+setenv BIN 1.clang-${CLANG_VER}.bin
+setenv CC clang-${CLANG_VER}
+make ${BIN}
 end
 
 foreach GCC_VER ( 4.8 5 6 7 8 )
-
-echo $GCC_VER
-#command1
-#command2
+setenv BIN 1.gcc-${GCC_VER}.bin
+setenv CC gcc-${GCC_VER}
+make ${BIN}
 end
 
