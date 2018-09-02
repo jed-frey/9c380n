@@ -1,6 +1,7 @@
 CC?=clang
 C_FLAGS+=-Wall
+BIN?=1
 
-1: 1.c
+${BIN}: 1.c
 	${CC} ${C_FLAGS} -o ${@} ${^}
 
