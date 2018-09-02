@@ -6,4 +6,4 @@ struct Car {
   char license_plate[10];
 };
 
-struct Car car_init();
+void car_init(*struct Car);
