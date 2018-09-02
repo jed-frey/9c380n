@@ -1,15 +1,23 @@
 CC?=clang
 C_FLAGS+=-Wall
-BIN?=1.bin
-PPO?=1.pp # Pre processor out.
+SRC?=1.c
+BIN?=${SRC}.bin
+PPO?=${SRC}.pp # Pre processor out.
 
 .PHONY: all
 all:
 	./make_all.sh
 
-${BIN}: 1.c
+${BIN}: ${SRC}
 	${CC} ${C_FLAGS} -o ${@} ${^}
 
-${PPO}: 1.c
+${PPO}: ${SRC}
 	${CC} -E -o ${@} ${^}
 
+${LL}: ${SRC}
+	${CC} -S -emit-llvm -o ${@} ${^}
+
+
+.PHONY: clean
+clean:
+	rm -rf *.bin *.pp
