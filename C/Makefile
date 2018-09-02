@@ -20,4 +20,4 @@ ${LL}: ${SRC}
 
 .PHONY: clean
 clean:
-	rm -rf *.bin *.pp
+	rm -rf *.bin *.pp *.ll
